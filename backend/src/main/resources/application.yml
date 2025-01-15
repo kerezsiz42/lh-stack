@@ -1,0 +1,12 @@
+spring:
+  security:
+    user:
+      username: user
+      password: password
+  application:
+    name: backend
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:db}
+    username: ${MYSQL_USER:user}
+    password: ${MYSQL_PASSWORD:password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
